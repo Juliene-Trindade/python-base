@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+__version__ = 0.1.0
+__author__ = "Juliene"
 
 email_tmpl = """
     Olá, %(nome)s!
