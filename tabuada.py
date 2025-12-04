@@ -1,14 +1,20 @@
 #!/usr/bin/python3
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Juliene"
 
+
+    # Iterable (percorríveis)
 numeros = list(range(1, 11))
 
-# Iterable (percorríveis)
 
-for numero in numeros:
-    print("Tabuada do:", numero)
-    for numero_mult in numeros:
-        print(numero * numero_mult)
-    print("-------------")
+for n1 in numeros:
+    print("{:-^18}".format(f"Tabuada do {n1}"))
+    print()
+    for n2 in numeros:
+        resultado = n1 * n2
+        print("{:^18}".format(f"{n1} x {n2} = {resultado}\n"))    
+    
+
+    print("#" * 18 + "\n")
+    # print()
